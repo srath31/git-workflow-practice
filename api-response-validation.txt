@@ -1,3 +1,10 @@
 1. Validate HTTP 200 response, response time, and content type.
 2. Validate required fields in the API response body.
 3. Validate HTTP 400 response for invalid input.
+4. Verify HTTP 401 when the authentication token is missing.
+5. Verify HTTP 403 when the user lacks permission.
+6. Verify HTTP 404 when the requested resource does not exist.
+7. Verify HTTP 500 handling for an internal server error.
+8. Verify response time is within the expected limit.
+9. Verify the Content-Type header is application/json.
+10. Verify the response contains no unexpected sensitive data.
