@@ -1,4 +1,4 @@
-1. Validate HTTP 200 response, response time, and content type.
+1. Validate HTTP Success 200/201 response, response time, and content type.
 2. Validate required fields in the API response body.
 3. Validate HTTP 400 response for invalid input.
 4. Verify HTTP 401 when the authentication token is missing.
