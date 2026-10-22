@@ -1,0 +1,68 @@
+Git
+------
+version control system
+
+git clone
+git add .
+git commit -m ""
+git status
+git log : commit history
+git log --oneline
+git log --graph
+git branch : to locally check how many branch
+git branch -d featurebranch
+git branch branchname: create branch
+git checkout -b branchname/git switch -c newbranch: it will create and switch to the new branch
+git checkout branchname/git switch branch: it will switch to the existing branch
+git merge branchname
+git rebase branchname
+git diff
+git restore filename: ==> undo the local changes(not committed yet)
+git revert HEAD: undo a commit safely
+git push origin main/featurebranch: origin refere to remote repo
+git pull origin main
+
+
+Complete Flow 
+------------------
+
+main branch
+-------------
+git pull origin main
+
+create feature branch
+--------------------
+git switch -c feature/branch1
+
+update the code
+git status
+git add .
+git commit -m "updated the code"
+git status
+git log --oneline --graph
+git pull origin main
+if any merge conflict solve those
+git log --oneline --graph
+git push origin feature/branch1 (MR Raised)
+
+main is used only to sync approved and merged changes from the remote repository.
+
+switch to main branch
+-------------
+git switch main
+git pull origin main
+
+delete feature branch
+-----------------------
+git branch
+git branch -d feature/branch1
+git branch
+
+pwd	   Shows current directory	pwd
+ls	   Lists files and folders	ls -la
+mkdir  Creates a folder	mkdir demo
+cd	   Changes directory	cd demo
+echo   Prints text or writes to a file	echo "Hello Git"
+cat	   Displays file contents	cat notes.txt
+cd ..
+clear
